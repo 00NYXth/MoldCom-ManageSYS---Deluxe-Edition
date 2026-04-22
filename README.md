@@ -746,4 +746,3 @@ SELECT ID, Username, Password FROM Utilizatori WHERE ID = 7;
 
 ---
 
-_Raport generat pentru MoldCom Electronics Store — Management System V2_
