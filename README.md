@@ -3,8 +3,9 @@
 **Versiune:** V2 · SQL Server Express  
 **Tehnologie:** C# Windows Forms · .NET Framework  
 **Bază de date:** Microsoft SQL Server Express (`BOOT-PC-001\SQLEXPRESS` · `MoldCom2`)  
-**Data raportului:** _(completați data)_  
-**Autor:** _(completați numele)_
+**Data raportului:** _19 arpilie 2026_  
+**Autor:** _Gaina Valentin_   
+**Profesor:** _Covali Eugenia_
 
 ---
 
@@ -561,15 +562,13 @@ Această secțiune prezintă capturi de ecran ale aplicației în timp real, îm
 
 **Screenshot 1 — Formularul de Login**
 
-> _Inserați aici o captură de ecran a formularului de login gol._
+<img width="596" height="792" alt="image" src="https://github.com/user-attachments/assets/38d37e6d-3346-43e0-bf8d-47a21c2ebb03" />
 
-![Login Form](screenshots/01_login_form.png)
 
 **Screenshot 2 — Mesaj de eroare la credențiale greșite**
 
-> _Inserați aici o captură cu mesajul „⚠ Incorrect username or password." afișat sub câmpuri._
+<img width="595" height="808" alt="image" src="https://github.com/user-attachments/assets/1ce687c5-57bb-4c04-8516-0d898fa7dc75" />
 
-![Login Error](screenshots/02_login_error.png)
 
 **Screenshot 3 — Autentificare reușită (Admin)**
 
