@@ -572,77 +572,50 @@ Această secțiune prezintă capturi de ecran ale aplicației în timp real, îm
 
 **Screenshot 3 — Autentificare reușită (Admin)**
 
-> _Inserați captura cu panoul Admin deschis după autentificarea cu contul de Admin._
-
-![Login Success Admin](screenshots/03_login_success_admin.png)
+<img width="1880" height="1114" alt="image" src="https://github.com/user-attachments/assets/8d8498ad-2c84-44b4-a5a2-e34a638312fb" />
 
 ---
 
 ### 11.2 Admin — Gestionare Produse
 
-**Screenshot 4 — Lista de produse în AdminPan**
+**Screenshot 4 — Adăugarea unui produs nou**
 
-> _Inserați captura cu lista completă de produse, evidențiind coloanele Cod, Nume, Categorie, Pret, Cantitate, Locatie._
+<img width="1885" height="1111" alt="image" src="https://github.com/user-attachments/assets/a1c488c7-f3cb-429a-b4f5-6ac42939dbf8" />
 
-![Admin Products List](screenshots/04_admin_products_list.png)
 
-**Screenshot 5 — Adăugarea unui produs nou**
+**Screenshot 5 — Adăugarea unui utilizator nou**
 
-> _Inserați captura cu câmpurile completate pentru un produs nou și butonul „Add" apăsat._
+<img width="1882" height="1087" alt="image" src="https://github.com/user-attachments/assets/427b62b1-c9bf-49ca-9cf6-9c817c94b9c0" />
 
-![Admin Add Product](screenshots/05_admin_add_product.png)
 
 **Screenshot 6 — Confirmare în baza de date după adăugare**
 
-> _Inserați captura din SQL Server Management Studio (SSMS) cu rezultatul unui `SELECT * FROM Produse WHERE Cod = '...'` care arată produsul nou adăugat._
+> _Adaugarea produs._
 
-![DB Confirmation Add Product](screenshots/06_db_confirm_add_product.png)
 
-```sql
--- Query de verificare recomandat:
-SELECT * FROM Produse WHERE Cod = 'COD_NOU_ADĂUGAT';
-```
+<img width="1110" height="73" alt="image" src="https://github.com/user-attachments/assets/7dd51356-5230-44c2-8333-274eabb4486d" />
+
+
+
+> _Adaugarea utilizator._
+
+<img width="960" height="45" alt="image" src="https://github.com/user-attachments/assets/58773b8f-3c07-4534-8760-b808e57c1c77" />
+
+
 
 **Screenshot 7 — Actualizarea unui produs**
 
-> _Inserați captura înainte și după modificarea prețului sau altui câmp, urmată de captura din SSMS cu valoarea actualizată._
+<img width="1872" height="941" alt="image" src="https://github.com/user-attachments/assets/5b6706c6-7b1c-4b9a-9ff0-91c89dd21333" />
 
-![Admin Update Product](screenshots/07_admin_update_product.png)
-![DB Confirmation Update](screenshots/07b_db_confirm_update.png)
+
+<img width="1865" height="1051" alt="image" src="https://github.com/user-attachments/assets/baefd365-5ada-4c52-ae28-29f4717c5a6b" />
+
 
 **Screenshot 8 — Ștergerea unui produs**
 
-> _Inserați captura cu dialogul de confirmare a ștergerii, urmată de captura din SSMS care arată că produsul nu mai există._
+<img width="805" height="128" alt="image" src="https://github.com/user-attachments/assets/a512f334-35a1-4db6-bb98-2435b5040ff4" />
 
-![Admin Delete Product](screenshots/08_admin_delete_product.png)
-![DB Confirmation Delete](screenshots/08b_db_confirm_delete.png)
 
----
-
-### 11.3 Admin — Gestionare Utilizatori
-
-**Screenshot 9 — Lista de utilizatori**
-
-> _Inserați captura cu toți utilizatorii din sistem, cu Username, Password și Rol vizibile._
-
-![Admin Users List](screenshots/09_admin_users_list.png)
-
-**Screenshot 10 — Adăugarea unui utilizator nou**
-
-> _Inserați captura cu formularul completat pentru un utilizator nou (ex: Username „test_user", Rol „Vizitator")._
-
-![Admin Add User](screenshots/10_admin_add_user.png)
-
-**Screenshot 11 — Confirmare în baza de date**
-
-> _Inserați captura din SSMS cu `SELECT * FROM Utilizatori` sau `SELECT * FROM Utilizatori WHERE Username = 'test_user'` arătând utilizatorul nou creat._
-
-![DB Confirmation Add User](screenshots/11_db_confirm_add_user.png)
-
-```sql
--- Query de verificare recomandat:
-SELECT * FROM Utilizatori ORDER BY ID DESC;
-```
 
 ---
 
@@ -650,55 +623,37 @@ SELECT * FROM Utilizatori ORDER BY ID DESC;
 
 **Screenshot 12 — Tab-ul de Rapoarte**
 
-> _Inserați captura cu cei trei indicatori principali (Total Produse Unice, Total Bucăți Stoc, Valoare Totală) și lista produselor cu stoc critic._
+<img width="1529" height="1040" alt="image" src="https://github.com/user-attachments/assets/824c0f32-c8a0-4aaf-b0c1-ac5489061c43" />
 
-![Admin Reports](screenshots/12_admin_reports.png)
 
-**Screenshot 13 — Confirmare valori din SSMS**
-
-> _Inserați captura cu rezultatul procedurii `sp_GetRaportDepozit` executate direct în SSMS, arătând că valorile afișate în aplicație corespund cu cele din baza de date._
-
-![DB Confirm Reports](screenshots/13_db_confirm_reports.png)
-
-```sql
--- Query de verificare recomandat:
-EXEC sp_GetRaportDepozit;
-EXEC sp_GetProduseStocCritic;
-```
 
 ---
-
 ### 11.5 Dashboard Angajat — Actualizare Stoc
 
 **Screenshot 14 — Dashboard-ul Angajatului**
 
-> _Inserați captura cu bara de statistici, lista de produse (cu produse colorate amber/roșu pentru stoc scăzut/epuizat) și panoul de actualizare din dreapta._
-
-![Employee Dashboard](screenshots/14_employee_dashboard.png)
+<img width="1611" height="1108" alt="image" src="https://github.com/user-attachments/assets/14c62fe6-6e46-4ad0-abfe-0b138a65e828" />
 
 **Screenshot 15 — Actualizare stoc: ÎNAINTE**
 
-> _Inserați captura din SSMS cu `SELECT Cod, Cantitate FROM Produse WHERE Cod = 'COD_TEST'` arătând cantitatea inițială._
+<img width="715" height="159" alt="image" src="https://github.com/user-attachments/assets/2420bf57-59cd-4a27-b8c2-1f1cae33388d" />
 
-![DB Before Stock Update](screenshots/15_db_before_stock_update.png)
 
 **Screenshot 16 — Actualizare stoc: APLICAȚIE**
 
-> _Inserați captura cu codul produsului introdus, noua cantitate completată, și mesajul de confirmare verde „✔ COD_TEST updated to X pcs."_
+<img width="1590" height="348" alt="image" src="https://github.com/user-attachments/assets/17a5493e-684d-469e-9c93-b6d3c0428d40" />
 
-![Employee Stock Update](screenshots/16_employee_stock_update.png)
 
 **Screenshot 17 — Actualizare stoc: DUPĂ (confirmare DB)**
 
-> _Inserați captura din SSMS cu același query `SELECT Cod, Cantitate FROM Produse WHERE Cod = 'COD_TEST'` arătând cantitatea nouă — dovedind că sp_UpdateStocProdus a modificat baza de date._
+<img width="1106" height="159" alt="image" src="https://github.com/user-attachments/assets/c0c62d6e-23e6-468b-aeb6-a254b52135da" />
 
-![DB After Stock Update](screenshots/17_db_after_stock_update.png)
 
 ```sql
 -- Query de verificare recomandat:
-SELECT Cod, Nume, Cantitate FROM Produse WHERE Cod = 'COD_TEST';
-EXEC sp_UpdateStocProdus @Cod = 'COD_TEST', @CantitateNoua = X;
-SELECT Cod, Nume, Cantitate FROM Produse WHERE Cod = 'COD_TEST';
+SELECT id_produs, Nume, Cantitate FROM vizitator_MoldCom.Produse WHERE id_produs = '3';
+EXEC sp_UpdateStocProdus @id_produs = '3', @CantitateNoua = 37;
+SELECT id_produs, Nume, Cantitate FROM vizitator_MoldCom.Produse WHERE Cod = '3';
 ```
 
 ---
@@ -707,39 +662,33 @@ SELECT Cod, Nume, Cantitate FROM Produse WHERE Cod = 'COD_TEST';
 
 **Screenshot 18 — Magazinul Online**
 
-> _Inserați captura cu lista de produse, un produs selectat în dreapta cu prețul și detaliile afișate, și badge-ul de stoc._
+<img width="1612" height="1051" alt="image" src="https://github.com/user-attachments/assets/d9fc0d43-2d21-4571-822e-62ed2ab43808" />
 
-![Client Shop](screenshots/18_client_shop.png)
 
 **Screenshot 19 — Coșul de cumpărături**
 
-> _Inserați captura cu fereastra CartFormEditable deschisă, arătând produsele adăugate, cantitățile, subtotalurile și totalul general._
+<img width="839" height="698" alt="image" src="https://github.com/user-attachments/assets/f14dfc44-fefb-4353-b0b5-9083a78c0f3e" />
 
-![Client Cart](screenshots/19_client_cart.png)
 
 **Screenshot 20 — Stoc ÎNAINTE de plasarea comenzii (DB)**
 
-> _Inserați captura din SSMS arătând cantitățile produselor care urmează a fi comandate._
-
-![DB Before Order](screenshots/20_db_before_order.png)
+<img width="1105" height="160" alt="image" src="https://github.com/user-attachments/assets/542d6b9f-a445-4910-a8e1-71b91e34b7e0" />
 
 **Screenshot 21 — Confirmare plasare comandă**
 
-> _Inserați captura cu MessageBox-ul de confirmare a comenzii afișat de aplicație._
+<img width="293" height="47" alt="image" src="https://github.com/user-attachments/assets/de736644-69f9-4031-bba5-2c9ddd15628f" />
 
-![Order Confirmation](screenshots/21_order_confirmation.png)
 
 **Screenshot 22 — Stoc DUPĂ plasarea comenzii (DB)**
 
-> _Inserați captura din SSMS arătând că stocurile produselor comandate au scăzut cu cantitățile comandate — dovedind că sp_ScadeStocProdus a funcționat corect._
+<img width="1112" height="152" alt="image" src="https://github.com/user-attachments/assets/88c0e9b1-56cf-4519-b758-a9a66266e3f1" />
 
-![DB After Order](screenshots/22_db_after_order.png)
 
 ```sql
 -- Query de verificare recomandat:
-SELECT Cod, Nume, Cantitate FROM Produse WHERE Cod IN ('COD1', 'COD2');
+SELECT id_produs, Nume, Cantitate FROM vizitator_MoldCom.Produse WHERE id_produs IN (7);
 -- [Plasați comanda în aplicație]
-SELECT Cod, Nume, Cantitate FROM Produse WHERE Cod IN ('COD1', 'COD2');
+SELECT id_produs, Nume, Cantitate FROM vizitator_MoldCom.Produse WHERE Cod IN (7);
 -- Cantitățile ar trebui să fie mai mici cu exact cantitățile comandate
 ```
 
@@ -749,31 +698,28 @@ SELECT Cod, Nume, Cantitate FROM Produse WHERE Cod IN ('COD1', 'COD2');
 
 **Screenshot 23 — Tab My Account: Date Personale**
 
-> _Inserați captura cu câmpurile de date personale populate (sau goale pentru un client nou), înainte de salvare._
+<img width="1586" height="1015" alt="image" src="https://github.com/user-attachments/assets/a90d9a97-6167-487d-a3a9-d0b6f4e326af" />
 
-![Client Account Personal](screenshots/23_client_account_personal.png)
 
 **Screenshot 24 — Salvare date personale: confirmare DB**
 
-> _Inserați captura din SSMS cu `SELECT * FROM Clienti WHERE IdUtilizator = X` arătând datele salvate._
+<img width="1113" height="98" alt="image" src="https://github.com/user-attachments/assets/f18200de-7f03-4ca4-8edd-72025f830fc0" />
 
-![DB Confirm Client Data](screenshots/24_db_confirm_client_data.png)
 
 **Screenshot 25 — Schimbare parolă cu indicator de putere**
 
-> _Inserați captura cu bara de putere a parolei completată (verde, roșu sau galben), ilustrând funcționalitatea `CalcStrength()`._
+<img width="605" height="562" alt="image" src="https://github.com/user-attachments/assets/f87215ed-2e9b-42fe-9392-d05394e9360a" />
 
-![Client Password Strength](screenshots/25_client_password_strength.png)
+
 
 **Screenshot 26 — Confirmare schimbare parolă în DB**
 
-> _Inserați captura din SSMS cu `SELECT Username, Password FROM Utilizatori WHERE ID = X` arătând noua parolă salvată._
+<img width="970" height="77" alt="image" src="https://github.com/user-attachments/assets/29bb4ad4-9c0d-4408-99b5-30851a6dd350" />
 
-![DB Confirm Password Change](screenshots/26_db_confirm_password_change.png)
 
 ```sql
 -- Query de verificare recomandat:
-SELECT ID, Username, Password FROM Utilizatori WHERE ID = X;
+SELECT ID, Username, Password FROM Utilizatori WHERE ID = 7;
 ```
 
 ---
