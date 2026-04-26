@@ -3,7 +3,7 @@
 **Versiune:** V2 · SQL Server Express  
 **Tehnologie:** C# Windows Forms · .NET Framework  
 **Bază de date:** Microsoft SQL Server Express (`BOOT-PC-001\SQLEXPRESS` · `MoldCom2`)  
-**Data raportului:** _19 arpilie 2026_  
+**Data raportului:** _19 aprilie 2026_  
 **Autor:** _Gaina Valentin_   
 **Profesor:** _Covali Eugenia_
 
@@ -48,6 +48,7 @@
     - 11.6 [Client — Magazin și Plasare Comandă](#116-client--magazin-și-plasare-comandă)
     - 11.7 [Client — Contul Personal](#117-client--contul-personal)
 12. [Concluzii și Observații](#12-concluzii-și-observații)
+13. [Webografie și Resurse](#13-webografie-și-resurse)
 
 ---
 
@@ -564,11 +565,9 @@ Această secțiune prezintă capturi de ecran ale aplicației în timp real, îm
 
 <img width="596" height="792" alt="image" src="https://github.com/user-attachments/assets/38d37e6d-3346-43e0-bf8d-47a21c2ebb03" />
 
-
 **Screenshot 2 — Mesaj de eroare la credențiale greșite**
 
 <img width="595" height="808" alt="image" src="https://github.com/user-attachments/assets/1ce687c5-57bb-4c04-8516-0d898fa7dc75" />
-
 
 **Screenshot 3 — Autentificare reușită (Admin)**
 
@@ -582,40 +581,35 @@ Această secțiune prezintă capturi de ecran ale aplicației în timp real, îm
 
 <img width="1885" height="1111" alt="image" src="https://github.com/user-attachments/assets/a1c488c7-f3cb-429a-b4f5-6ac42939dbf8" />
 
-
 **Screenshot 5 — Adăugarea unui utilizator nou**
 
 <img width="1882" height="1087" alt="image" src="https://github.com/user-attachments/assets/427b62b1-c9bf-49ca-9cf6-9c817c94b9c0" />
-
 
 **Screenshot 6 — Confirmare în baza de date după adăugare**
 
 > _Adaugarea produs._
 
-
 <img width="1110" height="73" alt="image" src="https://github.com/user-attachments/assets/7dd51356-5230-44c2-8333-274eabb4486d" />
-
-
 
 > _Adaugarea utilizator._
 
 <img width="960" height="45" alt="image" src="https://github.com/user-attachments/assets/58773b8f-3c07-4534-8760-b808e57c1c77" />
 
-
-
 **Screenshot 7 — Actualizarea unui produs**
 
 <img width="1872" height="941" alt="image" src="https://github.com/user-attachments/assets/5b6706c6-7b1c-4b9a-9ff0-91c89dd21333" />
 
-
 <img width="1865" height="1051" alt="image" src="https://github.com/user-attachments/assets/baefd365-5ada-4c52-ae28-29f4717c5a6b" />
-
 
 **Screenshot 8 — Ștergerea unui produs**
 
 <img width="805" height="128" alt="image" src="https://github.com/user-attachments/assets/a512f334-35a1-4db6-bb98-2435b5040ff4" />
 
+---
 
+### 11.3 Admin — Gestionare Utilizatori
+
+> _Vezi Screenshot 5 și Screenshot 6 (Adăugarea utilizator) din secțiunea 11.2._
 
 ---
 
@@ -625,9 +619,8 @@ Această secțiune prezintă capturi de ecran ale aplicației în timp real, îm
 
 <img width="1529" height="1040" alt="image" src="https://github.com/user-attachments/assets/824c0f32-c8a0-4aaf-b0c1-ac5489061c43" />
 
-
-
 ---
+
 ### 11.5 Dashboard Angajat — Actualizare Stoc
 
 **Screenshot 14 — Dashboard-ul Angajatului**
@@ -638,16 +631,13 @@ Această secțiune prezintă capturi de ecran ale aplicației în timp real, îm
 
 <img width="715" height="159" alt="image" src="https://github.com/user-attachments/assets/2420bf57-59cd-4a27-b8c2-1f1cae33388d" />
 
-
 **Screenshot 16 — Actualizare stoc: APLICAȚIE**
 
 <img width="1590" height="348" alt="image" src="https://github.com/user-attachments/assets/17a5493e-684d-469e-9c93-b6d3c0428d40" />
 
-
 **Screenshot 17 — Actualizare stoc: DUPĂ (confirmare DB)**
 
 <img width="1106" height="159" alt="image" src="https://github.com/user-attachments/assets/c0c62d6e-23e6-468b-aeb6-a254b52135da" />
-
 
 ```sql
 -- Query de verificare recomandat:
@@ -664,11 +654,9 @@ SELECT id_produs, Nume, Cantitate FROM vizitator_MoldCom.Produse WHERE Cod = '3'
 
 <img width="1612" height="1051" alt="image" src="https://github.com/user-attachments/assets/d9fc0d43-2d21-4571-822e-62ed2ab43808" />
 
-
 **Screenshot 19 — Coșul de cumpărături**
 
 <img width="839" height="698" alt="image" src="https://github.com/user-attachments/assets/f14dfc44-fefb-4353-b0b5-9083a78c0f3e" />
-
 
 **Screenshot 20 — Stoc ÎNAINTE de plasarea comenzii (DB)**
 
@@ -678,11 +666,9 @@ SELECT id_produs, Nume, Cantitate FROM vizitator_MoldCom.Produse WHERE Cod = '3'
 
 <img width="293" height="47" alt="image" src="https://github.com/user-attachments/assets/de736644-69f9-4031-bba5-2c9ddd15628f" />
 
-
 **Screenshot 22 — Stoc DUPĂ plasarea comenzii (DB)**
 
 <img width="1112" height="152" alt="image" src="https://github.com/user-attachments/assets/88c0e9b1-56cf-4519-b758-a9a66266e3f1" />
-
 
 ```sql
 -- Query de verificare recomandat:
@@ -700,22 +686,17 @@ SELECT id_produs, Nume, Cantitate FROM vizitator_MoldCom.Produse WHERE Cod IN (7
 
 <img width="1586" height="1015" alt="image" src="https://github.com/user-attachments/assets/a90d9a97-6167-487d-a3a9-d0b6f4e326af" />
 
-
 **Screenshot 24 — Salvare date personale: confirmare DB**
 
 <img width="1113" height="98" alt="image" src="https://github.com/user-attachments/assets/f18200de-7f03-4ca4-8edd-72025f830fc0" />
-
 
 **Screenshot 25 — Schimbare parolă cu indicator de putere**
 
 <img width="605" height="562" alt="image" src="https://github.com/user-attachments/assets/f87215ed-2e9b-42fe-9392-d05394e9360a" />
 
-
-
 **Screenshot 26 — Confirmare schimbare parolă în DB**
 
 <img width="970" height="77" alt="image" src="https://github.com/user-attachments/assets/29bb4ad4-9c0d-4408-99b5-30851a6dd350" />
-
 
 ```sql
 -- Query de verificare recomandat:
@@ -746,3 +727,69 @@ SELECT ID, Username, Password FROM Utilizatori WHERE ID = 7;
 
 ---
 
+## 13. Webografie și Resurse
+
+### Tehnologii principale
+
+1. Microsoft. *Windows Forms documentation for .NET Framework*. Microsoft Learn.
+   https://learn.microsoft.com/en-us/dotnet/desktop/winforms/
+
+2. Microsoft. *SQL Server Express Edition*. Microsoft.
+   https://www.microsoft.com/en-us/sql-server/sql-server-downloads
+
+3. Microsoft. *.NET Framework documentation*. Microsoft Learn.
+   https://learn.microsoft.com/en-us/dotnet/framework/
+
+### Baze de date și SQL
+
+1. Microsoft. *Stored Procedures (Database Engine)*. Microsoft Learn.
+   https://learn.microsoft.com/en-us/sql/relational-databases/stored-procedures/stored-procedures-database-engine
+
+2. Microsoft. *SqlCommand Class — System.Data.SqlClient*. Microsoft Learn.
+   https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlcommand
+
+3. Microsoft. *Configuring Windows Authentication in SQL Server*. Microsoft Learn.
+   https://learn.microsoft.com/en-us/sql/relational-databases/security/choose-an-authentication-mode
+
+4. Microsoft. *SQL Transactions — BEGIN, COMMIT, ROLLBACK*. Microsoft Learn.
+   https://learn.microsoft.com/en-us/sql/t-sql/language-elements/transactions-transact-sql
+
+### Arhitectură și design patterns
+
+1. Microsoft. *Object-Oriented Programming in C#*. Microsoft Learn.
+   https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/
+
+2. Microsoft. *Role-Based Access Control (RBAC) concepts*. Microsoft Learn.
+    https://learn.microsoft.com/en-us/azure/role-based-access-control/overview
+
+3. Microsoft. *Data Access Layer patterns — Repository Pattern*. Microsoft Learn.
+    https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design
+
+### Securitate
+
+1. OWASP. *SQL Injection Prevention Cheat Sheet*. OWASP Foundation.
+    https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
+
+2. OWASP. *Password Storage Cheat Sheet*. OWASP Foundation.
+    https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html
+
+3. Microsoft. *SecureString and Password Hashing in .NET*. Microsoft Learn.
+    https://learn.microsoft.com/en-us/dotnet/standard/security/cryptographic-services
+
+### Componente UI utilizate
+1. Microsoft. *ListView Control — Windows Forms*. Microsoft Learn.
+    https://learn.microsoft.com/en-us/dotnet/desktop/winforms/controls/listview-control-windows-forms
+
+2. Microsoft. *TabControl — Windows Forms*. Microsoft Learn.
+    https://learn.microsoft.com/en-us/dotnet/desktop/winforms/controls/tabcontrol-control-windows-forms
+
+3. Microsoft. *NumericUpDown Control — Windows Forms*. Microsoft Learn.
+    https://learn.microsoft.com/en-us/dotnet/desktop/winforms/controls/numericupdown-control-windows-forms
+
+4. Microsoft. *ProgressBar Control — Windows Forms*. Microsoft Learn.
+    https://learn.microsoft.com/en-us/dotnet/desktop/winforms/controls/progressbar-control-windows-forms
+
+5. Microsoft. *Timer Component — Windows Forms*. Microsoft Learn.
+    https://learn.microsoft.com/en-us/dotnet/desktop/winforms/controls/timer-component-windows-forms
+
+---
